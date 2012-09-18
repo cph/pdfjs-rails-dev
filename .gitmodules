@@ -1,0 +1,3 @@
+[submodule "lib/pdfjs-rails"]
+	path = lib/pdfjs-rails
+	url = git@github.com:concordia-publishing-house/pdfjs-rails.git
