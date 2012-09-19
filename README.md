@@ -44,3 +44,4 @@ Presently the app has two routes: `localhost:3000/fullscreen` and `localhost:300
 
  - Write a generator (`rails generate pdfjs-rails:install`) which copies `public/locale.properties` to the host app's public folder
  - Move more of the viewer's options into parameters for the helper (e.g. which buttons to show)
+ - Support alternate themes for the viewer
