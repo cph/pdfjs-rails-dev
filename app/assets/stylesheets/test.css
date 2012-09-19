@@ -1,0 +1,16 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#pdf_viewer.fullscreen {
+  height: 100%;
+}
+
+#pdf_viewer.boxed {
+  border: 3px solid #f7b;
+  margin: 40px;
+  width: 600px;
+  height: 500px;
+}
