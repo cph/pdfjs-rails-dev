@@ -7,8 +7,7 @@ This is a Rails application that contains the `pdfjs-rails` gem. It's used for t
 ### How to Use
 
     git clone git@github.com:concordia-publishing-house/pdfjs-rails-dev.git
-    cd pdfjs-rails-dev<link rel="stylesheet" href="app/assets/stylesheets/application.css" type="text/css" media="screen" title="no title" charset="utf-8">
-    
+    cd pdfjs-rails-dev
     bundle install
     bundle exec rails s
 
