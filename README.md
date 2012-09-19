@@ -24,16 +24,16 @@ Presently the app has two routes: `localhost:3000/fullscreen` and `localhost:300
 3. Add these lines to `application.js`:
 
 ```
-    //= require compatibility.js
-    //= require l10n.js
-    //= require pdf.js
-    //= require viewer.js
+//= require compatibility.js
+//= require l10n.js
+//= require pdf.js
+//= require viewer.js
 ```
 
 4. Add these lines to 'application.css':
 
 ```
-    *= require viewer.css
+*= require viewer.css
 ```
 
 5. Put `<%= pdf_viewer @path %>` into a view where you want the viewer to be and where `@path` is the relative URL of a PDF
@@ -43,5 +43,10 @@ Presently the app has two routes: `localhost:3000/fullscreen` and `localhost:300
 ### To Do
 
  - Write a generator (`rails generate pdfjs-rails:install`) which copies `public/locale.properties` to the host app's public folder
- - Move more of the viewer's options into parameters for the helper (e.g. which buttons to show)
+ - Move more of the viewer's options into parameters (in an options hash) for the helper
+   - An option to include the sidebar or not (defaults to true)
+   - An option to include the fullscreen button or not (defaults to true)
+   - An option to include the "Open File" button or not (defaults to false)
+   - An option to include the "Download" button or not (defaults to true)
+   - An option to set the default zoom level for the viewer when it loads
  - Support alternate themes for the viewer
