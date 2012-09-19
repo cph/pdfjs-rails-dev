@@ -24,14 +24,18 @@ Presently the app has two routes: `localhost:3000/fullscreen` and `localhost:300
 2. Run `rails generate pdfjs-rails:install` <span class="background-color: red; display: inline-block; border-radius: 2px; color: white;">Not Implemented</span>
 3. Add these lines to `application.js`:
 
-      //= require compatibility.js
-      //= require l10n.js
-      //= require pdf.js
-      //= require viewer.js
+```
+    //= require compatibility.js
+    //= require l10n.js
+    //= require pdf.js
+    //= require viewer.js
+```
 
 4. Add these lines to 'application.css':
 
-      *= require viewer.css
+```
+    *= require viewer.css
+```
 
 5. Put `<%= pdf_viewer @path %>` into a view where you want the viewer to be and where `@path` is the relative URL of a PDF
 
